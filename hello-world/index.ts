@@ -8,17 +8,18 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
         : "Du bist aber unhöflich.";
 
 
-    context.bindings.todos = JSON.stringify({
-        id: 33, //uuidv4(),
-        description: name
+
+    context.bindings.beer = JSON.stringify({
+        id: 2, //uuidv4(),
+        value: '98989'
     });
 
-
     context.res = {
-        // status: 200, /* Defaults to 200 */
-        body: responseMessage
+        body: 'done'
     };
 
+    // context.done()
 };
 
 export default httpTrigger;
+// func azure functionapp publish ccmsrkazuretf-dev-function-app
