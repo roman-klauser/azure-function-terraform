@@ -8,10 +8,9 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
         : "Du bist aber unhöflich.";
 
 
-    context.bindings.bier = JSON.stringify({
-        'id': 100,
-        'name': 'Name it',
-        'style': 'neipa'
+    context.bindings.todos = JSON.stringify({
+        id: 33, //uuidv4(),
+        description: name
     });
 
 

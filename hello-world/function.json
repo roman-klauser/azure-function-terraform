@@ -16,6 +16,15 @@
       "name": "res"
     },
     {
+      "name": "todos",
+      "type": "cosmosDB",
+      "databaseName": "some-db-id",
+      "collectionName": "some-container-db",
+      "createIfNotExists": true,
+      "connectionStringSetting": "OTHER_DB",
+      "direction": "out"
+    },
+    {
       "direction": "out",
       "name": "bier",
       "type": "cosmosDB",
