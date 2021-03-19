@@ -21,7 +21,6 @@
       "type": "cosmosDB",
       "databaseName": "ccmsrkazuretf-cosmos-sql-db",
       "collectionName": "beer-container",
-      "createIfNotExists": true,
       "connectionStringSetting": "COSMOS_DB_CONNECTION_STRING"
     }
   ],
