@@ -9,7 +9,7 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
 
 
 
-    context.bindings.beer = JSON.stringify({
+    context.bindings.bier = JSON.stringify({
         id: 2, //uuidv4(),
         value: '98989'
     });
