@@ -12,10 +12,10 @@ variables:
   azureSubscription: 'ff2a06a5-6b2b-4563-8308-fb42ea77b605'
 
   # Function app name
-  functionAppName: 'ccmsrkazuretf-dev-function-app'
+  functionAppName: 'ccmsrk-dev-function-app'
 
   # Environment name
-  environmentName: 'ccmsrkazuretf-dev-function-app'
+  environmentName: 'ccmsrk-dev-function-app'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -68,7 +68,7 @@ stages:
         deploy:
           steps:
           - task: AzureFunctionApp@1
-            displayName: 'Azure Functions App Deploy: ccmsrkazuretf-dev-function-app'
+            displayName: 'Azure Functions App Deploy: ccmsrk-dev-function-app'
             inputs:
               azureSubscription: '$(azureSubscription)'
               appType: functionAppLinux
